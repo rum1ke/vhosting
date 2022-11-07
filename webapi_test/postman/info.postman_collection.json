@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "1764411d-8b33-496c-ab0e-f59aba31c87d",
+		"name": "info",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create info",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"stream\": \"43704893903143017940\",\n    \"startPeriod\": \"2022-06-18 10:00:00.973640+03\",\n    \"stopPeriod\": \"2022-06-18 10:15:51.973640+03\",\n    \"timeLife\": \"2022-06-19 16:13:51.973640+03\"\n}\n"
+				},
+				"url": {
+					"raw": "http://{{address}}:{{port}}/info",
+					"protocol": "http",
+					"host": [
+						"{{address}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://{{address}}:{{port}}/info/69",
+					"protocol": "http",
+					"host": [
+						"{{address}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"info",
+						"69"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all infos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://{{address}}:{{port}}/info/all",
+					"protocol": "http",
+					"host": [
+						"{{address}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"info",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "partially update info",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"stream\": \"qwerty\",\n    \"userId\": 33\n}\n"
+				},
+				"url": {
+					"raw": "http://{{address}}:{{port}}/info/69",
+					"protocol": "http",
+					"host": [
+						"{{address}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"info",
+						"69"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete info",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://{{address}}:{{port}}/info/1",
+					"protocol": "http",
+					"host": [
+						"{{address}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"info",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "a8517d5a-ab39-4522-a586-12ed2205093b",
+		"name": "video",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create video",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://somewebsite.com/video/meqjqnrkjqnr\",\n    \"file\": \"asd.webm\",\n    \"infoId\": 69\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/video",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"video"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get video",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/video/65",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"video",
+						"65"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all videos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/video/all",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"video",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "partially update video",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://somewebsite.com/video/qwerty\",\n    \"fileName\": \"qwerty.webm\",\n    \"infoId\": 69\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/video/65",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"video",
+						"65"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete video",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/video/65",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"video",
+						"65"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

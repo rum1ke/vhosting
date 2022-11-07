@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "e3dfd563-06a7-4557-8f39-e82a83045a53",
+		"name": "perm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all perms",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/perm/all",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"perm",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set user perm",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"permIds\": [5,7]\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/perm/user/0",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"perm",
+						"user",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user group",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/perm/user/0",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"perm",
+						"user",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user group",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"permIds\": [9,10,4,5]\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/perm/user/0",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"perm",
+						"user",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set group perm",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"permIds\": [9,10,11]\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/perm/group/0",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"perm",
+						"group",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get group perm",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/perm/group/0",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"perm",
+						"group",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete group perm",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"permIds\": [10,11,12,13,14]\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/perm/group/0",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"perm",
+						"group",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

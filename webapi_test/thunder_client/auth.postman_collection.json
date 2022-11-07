@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "2eac8e58-e59e-45cf-a2ac-5a8b9df045ba",
+		"name": "auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sign-in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"admin\"\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/signin",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "change password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\": \"admin\"\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/change_password",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"change_password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sign-out",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/signout",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"signout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

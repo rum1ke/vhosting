@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "1764411d-8b33-496c-ab0e-f59aba31c87d",
+		"name": "info",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create info",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"stream\": \"43704893903143017940\",\n    \"startPeriod\": \"2022-06-18 10:00:00.973640+03\",\n    \"stopPeriod\": \"2022-06-18 10:15:51.973640+03\",\n    \"timeLife\": \"2022-06-19 16:13:51.973640+03\"\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/info",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/info/69",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"info",
+						"69"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all infos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/info/all",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"info",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "partially update info",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"stream\": \"qwerty\",\n    \"userId\": 33\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/info/69",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"info",
+						"69"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete info",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/info/1",
+					"protocol": "http",
+					"host": [
+						"127.0.0.1"
+					],
+					"port": "8000",
+					"path": [
+						"info",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

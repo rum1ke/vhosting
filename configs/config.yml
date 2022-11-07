@@ -1,0 +1,18 @@
+pagination:
+  getLimitDefault: 20
+
+server:
+  debugEnable: false
+  maxHeaderBytes: 1048576 # 1 megabyte
+
+session:
+  ttlHours: 168 # 7 days
+
+stream:
+  iceServers: [
+    "stun:stun.l.google.com:19302"
+  ]
+  snapshotPeriodSeconds: 60
+  snapshotShowStatus: false
+  snapshotsEnable: false
+  streamsUpdatePeriodSeconds: 60
